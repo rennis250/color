@@ -9,7 +9,7 @@ library(reshape2)
 set.seed(1234)
 
 ## Load in Data ------------------------------------------------------
-setwd('C:/Users/353384/Projects/color')
+# setwd('C:/Users/353384/Projects/color')
 data <- read.csv('inPerson_clean_data.csv')
 names(data)[5] <- 'R'
 

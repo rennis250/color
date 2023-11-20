@@ -1,0 +1,29 @@
+> summary(d_form_sig$acc)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.4421  0.5889  0.5541  0.6898  0.8780 
+ 
+ 
+ 
+> # Unscaled
+> lm_out <- lm(acc ~ dum_dd5 + dum_dd10 + dbar, data = d_form_sig)
+> summary(lm_out)
+
+Call:
+lm(formula = acc ~ dum_dd5 + dum_dd10 + dbar, data = d_form_sig)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57286 -0.11350  0.04169  0.12897  0.32595 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.576855   0.025139  22.947   <2e-16 ***
+dum_dd5     -0.017429   0.055799  -0.312    0.755    
+dum_dd10     0.066817   0.069290   0.964    0.336    
+dbar        -0.001332   0.001203  -1.107    0.270    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1801 on 214 degrees of freedom
+Multiple R-squared:  0.01017,	Adjusted R-squared:  -0.003705 
+F-statistic: 0.733 on 3 and 214 DF,  p-value: 0.5333

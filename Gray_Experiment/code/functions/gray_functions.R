@@ -358,7 +358,7 @@ cv_boot_gray_gandf <- function(d_form, cv_N = 10, bs_N = 100,
     # Define the progress bar index
     pb_i <- 0
 
-    pb <- txtProgressBar(min = 0, max = bs_n*cv_N,
+    pb <- txtProgressBar(min = 0, max = bs_N*cv_N,
                          style = 3, char= '=')
     
     # For the cross val index
